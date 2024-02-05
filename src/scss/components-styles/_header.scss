@@ -1,0 +1,88 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: #c4c4c4;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header-content {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  right: 70px;
+  bottom: 80px;
+  pointer-events: none;
+
+  @media (max-width: 1200px) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 5px;
+  }
+
+  @media (max-width: 767px) {
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    bottom: 5px;
+  }
+}
+
+.header-socials {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  pointer-events: all;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    bottom: 0;
+    top: unset;
+    width: 100%;
+  }
+}
+
+.header-see-more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: all;
+  z-index: 1;
+}
+
+.header-slider-control {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  pointer-events: all;
+  z-index: 1;
+
+  @media (max-width: 1200px) {
+    bottom: 15px;
+  }
+}
+
+.header-scrollbar {
+  pointer-events: all;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 50vh;
+  transform: rotate(90deg) translate(50%, 0%);
+  transform-origin: right top;
+  z-index: 1;
+
+  @media (max-width: 600px) {
+    transform: unset;
+    left: 0;
+    margin: 0 auto;
+    top: unset;
+    bottom: 9%;
+    width: 90%;
+  }
+}

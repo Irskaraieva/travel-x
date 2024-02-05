@@ -1,0 +1,33 @@
+.slider-controls {
+    display: grid;
+    gap: 25px;
+    width: 88px;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+
+    @media (max-width: 765px) {
+        display: none;
+    }
+}
+
+.slider-count {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.count-current,
+.swiper-pagination-current {
+    font-size: 32px;
+    line-height: 0.75;
+    color: #fff;
+}

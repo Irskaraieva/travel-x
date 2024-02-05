@@ -1,0 +1,55 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  align-items: center;
+  color: #fff;
+
+  & img {
+    height: 25px;
+    width: auto;
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+
+  & img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mob-socials {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  img {
+    height: 20px;
+    width: auto;
+    transition: 0.3s;
+    opacity: 1;
+  }
+
+  a:hover img {
+    animation: jumpingImg 0.6s ease-in-out;
+    opacity: 0.6;
+  }
+}

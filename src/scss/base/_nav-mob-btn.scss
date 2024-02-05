@@ -1,0 +1,56 @@
+.nav-mob-btn {
+  --time: 0.2s;
+  --width: 35px;
+  --height: 25px;
+  --line-height: 1px;
+  --color: #fcfcfc;
+  --radius: 2px;
+  position: relative;
+  height: var(--height);
+  width: var(--width);
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  pointer-events: all;
+  z-index: 200;
+}
+
+.burger-line {
+  height: 2px;
+  width: 100%;
+  border-radius: var(--radius);
+  background-color: var(--color);
+  transition: transform 0.3s, opacity 0.2s, background-color 0.3s;
+}
+
+.burger-line:nth-child(2) {
+  width: 88%;
+}
+
+.burger-line:nth-child(3) {
+  width: 76%;
+}
+
+.nav-mob-btn.active div:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 15px);
+  width: 60%;
+  height: 2px;
+}
+
+.nav-mob-btn.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-mob-btn.active div:nth-child(3) {
+  transform: rotate(-44deg) translate(6px, -15px);
+  width: 60%;
+  height: 2px;
+}
+
+.nav-mob-btn.active {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 35px;
+}
